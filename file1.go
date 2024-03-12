@@ -37,7 +37,6 @@ func main() {
     w := bufio.NewWriter(f)
     n4, err := w.WriteString("buffered\n")
     check(err)
-    fmt.Printf("wrote %d bytes\n", n4)
 
     w.Flush()
 
